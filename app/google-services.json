@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197021783191",
+    "project_id": "vetproject-e817e",
+    "storage_bucket": "vetproject-e817e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197021783191:android:529dd19fe50a083ebf45d2",
+        "android_client_info": {
+          "package_name": "com.sanj.thevet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197021783191-j15n4lrdbmoqans72s4mqsh3lqd7dafh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzSfrYgLR26WoQNFC6TAIyBkoi5CrcPQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197021783191-j15n4lrdbmoqans72s4mqsh3lqd7dafh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

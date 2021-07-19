@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:elevation="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/samplelat"
+            android:textColor="@color/amber_300"
+            android:textSize="20dp"
+            android:layout_marginRight="40dp"
+            android:text="Latitude"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/samplelon"
+            android:textSize="20dp"
+            android:textColor="@color/amber_300"
+            android:text="Longitude"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/findfarmer"
+        android:background="@color/amber_300"
+        android:layout_height="wrap_content"
+        android:text="View Location"/>
+
+</androidx.cardview.widget.CardView>

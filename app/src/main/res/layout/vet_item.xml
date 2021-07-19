@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cardDetails"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="58dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingHorizontal="8dp">
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/vetPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Angatia Benson"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:id="@+id/vetName"
+                android:drawablePadding="8dp"
+                app:drawableStartCompat="@drawable/ic_account" />
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vetName"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:text="0748355080"
+                android:id="@+id/vetPhone"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="8dp"
+                android:layout_marginTop="8dp"
+                app:drawableStartCompat="@drawable/ic_call" />
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/vetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:id="@+id/vetLocation"
+                android:layout_marginTop="8dp"
+                android:text="Kakamega County, East Wanga Constituency, Makunga Ward"
+                android:gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_location" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0987654321"
+                android:drawablePadding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/vetLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/vetCategory"
+                android:id="@+id/vetLicenseNumber"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                app:drawableStartCompat="@drawable/ic_card" />
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/vetLocation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vetLicenseNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="General Physician"
+                android:drawablePadding="8dp"
+                android:id="@+id/vetCategory"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_category" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PREVIEW"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btnPreview"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/vetCategory"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/doctor_icon"
+        android:background="@android:color/transparent"
+        android:elevation="2dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
